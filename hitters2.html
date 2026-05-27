@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="hitters.js"></script>
+<link rel="stylesheet" href="hitters.css">
+<title>hitters</title>
+</head>
+<body>
+<header>
+<span><h1 id="title"><img src="C:/Users/naras/OneDrive/Pictures/Screenshots/Screenshot (417).png" alt="cricket image" height="120px" width="120px" ></h1></span>
+<div><p id="demo">Live Score: </p>
+<p id="demo1" >computer Guess: </p></header>
+<p id="demo2"></p>
+</div>
+<br>
+<div><button class="user_guess" onclick=" cg(); ug(1); ">1</button>
+     <button class="user_guess" onclick=" cg(); ug(2); ">2</button>
+     <button class="user_guess" onclick=" cg(); ug(4); ">4</button>
+     <button class="user_guess" onclick=" cg(); ug(6); ">6</button></div>
+<br><br>
+<div><button class="infoButtons" onclick=" score=0; document.getElementById('demo').innerHTML= `Live Score: ${score}`; " >RESET</button>
+     <button class ="infoButtons" onclick=" document.getElementById('demo1').innerHTML= `Your Past Score: ${previous_score}`;">PAST SCORE</button>
+     <button class="infoButtons" onclick=" document.getElementById('demo1').innerHTML= `Your High Score: ${high_score}`;">HIGH SCORE</button></d>
+</body>
+</html>
