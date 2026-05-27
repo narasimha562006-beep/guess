@@ -56,3 +56,10 @@ function ug(user_guess) {
     }
 }
 
+function restart(){
+    let msg = confirm(" Do you want to restart the game? ");
+    if(msg){
+        score = 0;
+        document.getElementById('demo').innerHTML = `Live Score: ${score}`;
+    }
+}
